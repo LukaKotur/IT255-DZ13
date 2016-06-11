@@ -1,0 +1,50 @@
+<div class="container">
+    <h2 class="text-center form-headline">Enter your username and password</h2>
+
+  <form class="col-lg-6 col-lg-offset-3" role="form" [ngFormModel]="loginForm">
+    <div class="alert alert-danger" style="display: none;">
+
+    </div>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" ngControl='username'>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" ngControl='password'>
+    </div>
+    <button (click)="onLogin()" class="btn btn-default">Login</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="navbar-fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h4><strong>Met Hotels HQ</strong>
+                    </h4>
+        <p>3158 New York Ave.<br>Beverly Hills, CA 90210</p>
+        <ul class="list-unstyled">
+          <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+          <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li>
+            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+          </li>
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; Met Hotels 2016.</p>
+      </div>
+    </div>
+  </div>
+</footer>
